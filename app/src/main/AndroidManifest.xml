@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/app_ic"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/app_ic"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Android_MLKIT"
+        tools:targetApi="31">
+        <activity
+            android:name=".imgLabeling"
+            android:exported="false" />
+        <activity
+            android:name=".Barcode_activity"
+            android:exported="false" />
+        <activity
+            android:name=".RecognizeTextFromImage"
+            android:exported="false" />
+        <activity
+            android:name=".smart_reply"
+            android:exported="false" />
+        <activity
+            android:name=".Translate_Text"
+            android:exported="false" />
+        <activity
+            android:name=".LanguageDetct"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

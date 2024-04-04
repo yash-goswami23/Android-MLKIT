@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    android:gravity="center_horizontal"
+    tools:context=".Translate_Text">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome"
+        android:textSize="25sp"
+        android:id="@+id/welText"/>
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ACTIVITY Name"
+        android:textSize="25sp"
+        android:id="@+id/actTextView"/>
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="250dp"
+        android:textColor="#342042"
+        android:id="@+id/spinner1"
+        android:spinnerMode="dropdown"
+        android:layout_gravity="start"/>
+
+    <EditText
+        android:id="@+id/textInput1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="16"
+        android:textColor="#2E3E3B"
+        android:layout_marginTop="5dp"
+        android:hint="Enter The Text"
+        android:textSize="25sp"/>
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textColor="#271A3B"
+        android:layout_gravity="start"
+        android:layout_marginTop="2dp"
+        android:spinnerMode="dropdown" />
+    <TextView
+        android:layout_margin="20dp"
+        android:id="@+id/TransResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RESULT"
+        android:textIsSelectable="true"
+        android:textSize="30sp"
+        android:textColor="#006450"
+        android:textStyle="bold"/>
+    <Button
+        android:id="@+id/TransBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Translate"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"/>
+</LinearLayout>

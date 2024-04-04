@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_margin="10dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/welcomeTEXT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="40dp"
+        android:text="Android ML Kit"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeTEXT">
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:rowCount="2">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/LangDetectBtn"
+                        android:layout_width="180dp"
+                        android:layout_height="115dp"
+                        android:layout_centerInParent="true"
+                        android:padding="5dp"
+                        android:src="@drawable/language_detection2x" />
+
+                    <TextView
+                        android:id="@+id/textLD"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/LangDetectBtn"
+                        android:layout_centerHorizontal="true"
+                        android:text="Language Detector" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/TranTextBtn"
+                        android:layout_width="180dp"
+                        android:layout_height="115dp"
+                        android:layout_centerInParent="true"
+                        android:padding="5dp"
+                        android:src="@drawable/on_device_translate2x" />
+
+                    <TextView
+                        android:id="@+id/textTran"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/TranTextBtn"
+                        android:layout_centerHorizontal="true"
+                        android:text="Translater" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/smartReplyBtn"
+                        android:layout_width="180dp"
+                        android:layout_height="115dp"
+                        android:layout_centerInParent="true"
+                        android:padding="5dp"
+                        android:src="@drawable/smart_reply2x" />
+
+                    <TextView
+                        android:id="@+id/textSR"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/smartReplyBtn"
+                        android:layout_centerHorizontal="true"
+                        android:text="Smart reply" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/recgTIbtn"
+                        android:layout_width="180dp"
+                        android:layout_height="115dp"
+                        android:layout_centerInParent="true"
+                        android:padding="5dp"
+                        android:src="@drawable/text_recognition2x" />
+
+                    <TextView
+                        android:id="@+id/textRT"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/recgTIbtn"
+                        android:layout_centerHorizontal="true"
+                        android:text="Text recognition" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/QRscanBtn"
+                        android:layout_width="180dp"
+                        android:layout_height="115dp"
+                        android:layout_centerInParent="true"
+                        android:padding="5dp"
+                        android:src="@drawable/barcode_scanning2x" />
+
+                    <TextView
+                        android:id="@+id/textQR"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/QRscanBtn"
+                        android:layout_centerHorizontal="true"
+                        android:text="Barcode scanning" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/ImageLabaBtn"
+                        android:layout_width="180dp"
+                        android:layout_height="115dp"
+                        android:layout_centerInParent="true"
+                        android:padding="5dp"
+                        android:src="@drawable/image_labeling2x" />
+
+                    <TextView
+                        android:id="@+id/textIM"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/ImageLabaBtn"
+                        android:layout_centerHorizontal="true"
+                        android:text="Image labeling" />
+
+                </RelativeLayout>
+
+            </GridLayout>
+        </ScrollView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
